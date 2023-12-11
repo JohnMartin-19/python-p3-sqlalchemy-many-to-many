@@ -14,7 +14,7 @@ class Game(Base):
     __tablename__ = 'games'
 
     id = Column(Integer(), primary_key=True)
-    title = Column(String())
+    title = Column(String(),unique=True)
     genre = Column(String())
     platform = Column(String())
     price = Column(Integer())
